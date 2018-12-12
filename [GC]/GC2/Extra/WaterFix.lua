@@ -2,17 +2,17 @@
 WaterHidden = false
 
 function HideWater()
-for i,v in pairs(getElementsByType('water')) do
-local x,y,z = getElementPosition(v)
- setElementPosition(v,x,y,z-50)
-end 
+	for i,v in pairs(getElementsByType('water')) do
+		local x,y,z = getElementPosition(v)
+		 setElementPosition(v,x,y,z-50)
+	end 
 end
 
 function ShowWater()
-for i,v in pairs(getElementsByType('water')) do
-local x,y,z = getElementPosition(v)
- setElementPosition(v,x,y,z+50)
-end 
+	for i,v in pairs(getElementsByType('water')) do
+		local x,y,z = getElementPosition(v)
+		setElementPosition(v,x,y,z+50)
+	end 
 end
 
 function count (text, search)
@@ -22,11 +22,11 @@ function count (text, search)
 end
 
 function tunel(Element)
-if Element then
-if count(getElementID(Element),'beaver') then
-return true
-end
-end
+	if Element then
+		if count(getElementID(Element),'beaver') then
+			return true
+		end
+	end
 end
 
 
